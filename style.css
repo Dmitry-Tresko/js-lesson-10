@@ -1,0 +1,80 @@
+html {
+    font-size: 12px;
+}
+
+#branch-container {
+    font-size: 2rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+span {
+    cursor: pointer;
+}
+
+li {
+    padding: 5px;
+}
+
+span {
+    transition: all 0.25s;
+    border-bottom: 2px solid transparent;
+    margin-left: 15px;
+}
+
+span:hover {
+    color: grey;
+    border-bottom: 2px solid gray;
+}
+
+i.collapsed::before {
+    content: "-";
+    font-weight: bold;
+}
+
+i::before {
+    content: "+";
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+.disabled-tree-item {
+    color: lightgray;
+    cursor: default;
+    pointer-events: none;
+}
+
+.disabled-tree-item:hover {
+    color: lightgray;
+}
+
+table {
+    font-size: 2rem;
+}
+
+th,
+td {
+    border: 1px solid grey;
+    min-width: 200px;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.selected-tree-item {
+    color: red;
+    text-transform: uppercase;
+}
+
+.selected-tree-item:hover {
+    color: red;
+    border-bottom: 2px solid red;
+}
